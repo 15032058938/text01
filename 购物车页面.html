@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #gwc{
+            width: 770px;
+            height: 175px;
+            background: orangered;
+            position: absolute;
+            left: 100px;
+        }
+       #qjd{
+           width: 730px;
+           height: 170px;
+           border: solid 1px wheat;
+           border-radius: 15px 15px;
+           background: white;
+           position: relative;
+           top: 100px;
+           left: 20px;
+       }
+        #qjd .tianmao{
+            width: 730px;
+            height: 44px;
+            border: solid 1px blue;
+            border-radius: 15px 15px 0px 0px;
+        }
+        #qjd .yq{
+            width: 20px;
+            height: 20px;
+            border: solid 1px darkgray;
+            position: relative;
+            top:10px;
+            left: 10px;
+            border-radius: 11px;
+        }
+        #qjd .tianmao img{
+            width: 30px;
+            height: 15px;
+            position: absolute;
+            top: 15px;
+            left:40px;
+        }
+        #qjd .tianmao span{
+            font-size: 13px;
+            position: absolute;
+            top: 15px;
+            left: 90px;
+        }
+        #tu{
+            width: 730px;
+            height: 126px;
+            border: solid 1px blue;
+            position: absolute;
+            left: 20px;
+            top: 146px;
+            border-radius: 0px 0px 15px 15px;
+        }
+        #tu .quan{
+            width: 20px;
+            height: 20px;
+            border: solid 1px darkgray;
+            position: absolute;
+            top: 50px;
+            left: 10px;
+            border-radius: 11px;
+        }
+        #tu .tp{
+            width: 90px;
+            height: 90px;
+            position: absolute;
+            top: 10px;
+            left: 40px;
+        }
+        #tu .tp img{
+            width: 90px;
+            height: 90px;
+
+        }
+        #tu .tp h1{
+            width: 400px;
+            height: 30px;
+            font-size: 12px;
+            position: absolute;
+            top: 0px;
+            left: 100px;
+        }
+        #tu .tp h2{
+            width: 60px;
+            height: 30px;
+            font-size: 12px;
+            color: darkgray;
+            position: absolute;
+            top: 30px;
+            left: 100px;
+        }
+        #tu .tp h3{
+            width: 100px;
+            height: 30px;
+            font-size: 12px;
+            color: orangered;
+            position: absolute;
+            top: 60px;
+            left: 100px;
+        }
+        #tu .tp h4{
+            width: 60px;
+            height: 30px;
+            font-size: 12px;
+            color: orangered;
+            position: absolute;
+            top: 90px;
+            left: 100px;
+        }
+        #wyb{
+            width: 730px;
+            height: 170px;
+            border: solid 1px wheat;
+            border-radius: 15px 15px;
+            background: white;
+            position: relative;
+            top: 130px;
+            left: 20px;
+        }
+        #wyb .tianmao{
+            width: 730px;
+            height: 44px;
+            border: solid 1px blue;
+            border-radius: 15px 15px 0px 0px;
+        }
+        #wyb .yq{
+            width: 20px;
+            height: 20px;
+            border: solid 1px darkgray;
+            position: relative;
+            top:10px;
+            left: 10px;
+            border-radius: 11px;
+        }
+        #wyb .tianmao img{
+            width: 30px;
+            height: 15px;
+            position: absolute;
+            top: 15px;
+            left: 40px;
+        }
+        #wyb .tianmao span{
+            font-size: 13px;
+            position: absolute;
+            top: 15px;
+            left: 90px;
+        }
+        #tu1{
+            width: 730px;
+            height: 126px;
+            border: solid 1px blue;
+            position: absolute;
+            left: 20px;
+            top: 346px;
+            border-radius: 0px 0px 15px 15px;
+        }
+        #tu1 .quan{
+            width: 20px;
+            height: 20px;
+            border: solid 1px darkgray;
+            position: absolute;
+            top: 50px;
+            left: 10px;
+            border-radius: 11px;
+        }
+        #tu1 .tp{
+            width: 90px;
+            height: 90px;
+            position: absolute;
+            top: 10px;
+            left: 40px;
+        }
+        #tu1 .tp img{
+            width: 90px;
+            height: 90px;
+
+        }
+        #tu1 .tp h1{
+            width: 400px;
+            height: 30px;
+            font-size: 12px;
+            position: absolute;
+            top: 0px;
+            left: 100px;
+        }
+        #tu1 .tp h2{
+            width: 60px;
+            height: 30px;
+            font-size: 12px;
+            color: darkgray;
+            position: absolute;
+            top: 30px;
+            left: 100px;
+        }
+        #tu1 .tp h3{
+            width: 100px;
+            height: 30px;
+            font-size: 12px;
+            color: orangered;
+            position: absolute;
+            top: 60px;
+            left: 100px;
+        }
+        #tu1 .tp h4{
+            width: 60px;
+            height: 30px;
+            font-size: 12px;
+            color: orangered;
+            position: absolute;
+            top: 90px;
+            left: 100px;
+        }
+        #sy{
+            width: 1000px;
+            height: 40px;
+            border: solid 1px wheat;
+            position: fixed;
+            bottom:0px;
+            left: 30px;
+            display: flex;
+        }
+        #sy .sy1{
+            width: 200px;
+            height: 25px;
+            color:black;
+            text-align: center;
+            padding-top: 15px;
+        }
+        #sy .sy1 img{
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 1px;
+            left: 90px;
+        }
+        #sy .sy1 img a{
+            text-decoration: none;
+            color: white;
+        }
+        #sy .gwc{
+            width: 200px;
+            height: 25px;
+            color:black;
+            text-align: center;
+            padding-top: 15px;
+        }
+        #sy .gwc img{
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 1px;
+            left: 290px;
+        }
+        #sy .ddlb{
+            width: 200px;
+            height: 25px;
+            color:black;
+            text-align: center;
+            padding-top: 15px;
+        }
+        #sy .ddlb a{
+            text-decoration: none;
+            color: black;
+        }
+        #sy .ddlb img{
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 1px;
+            left: 490px;
+        }
+        #sy .wdtb{
+            width: 200px;
+            height: 25px;
+            color:black;
+            text-align: center;
+            padding-top: 15px;
+        }
+        #sy .wdtb img{
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 1px;
+            left: 690px;
+        }
+
+        #sy .gd{
+            width: 200px;
+            height: 25px;
+            color:black;
+            text-align: center;
+            padding-top: 15px;
+        }
+        #sy .gd img{
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 1px;
+            right: 90px;
+        }
+    </style>
+</head>
+<body>
+<div id="gwc">
+    <div id="qjd">
+    <div class="tianmao">
+     <div class="yq"></div>
+     <img src="imgs/{0ED92AB4-256F-4A2D-8517-70CF96ECA403}_20200802141603.jpg">
+        <span>colorkey旗舰店</span>
+    </div>
+    </div>
+    <div id="tu">
+    <div class="quan"></div>
+    <div class="tp">
+        <img src="imgs/{5ACED89B-614B-45C7-A1E9-1735109D773D}_20200802143935.jpg">
+        <h1>colorkey柯祺拉小黑镜唇釉镜面漆光唇釉唇蜜口红持久不掉色</h1><br>
+        <h2>R703</h2><br>
+        <h3>天猫无忧购</h3><br>
+        <h4>￥69</h4>
+        <img src="imgs/{E5D0F771-108E-41A5-8BCB-E7E0C9BCAD33}_20200802150319.jpg" style="width: 80px;height: 35px;position: absolute;top:80px ;left: 600px">
+    </div>
+    </div>
+    <div id="wyb">
+        <div class="tianmao">
+            <div class="yq"></div>
+            <img src="imgs/{0ED92AB4-256F-4A2D-8517-70CF96ECA403}_20200802141603.jpg">
+            <span>AbbysChioce旗舰店</span>
+        </div>
+    </div>
+    <div id="tu1">
+        <div class="quan"></div>
+        <div class="tp">
+            <img src="imgs/{413F23E1-83AB-40EF-9E72-5563ABDE79DC}_20200802144040.jpg">
+            <h1>colorkey柯祺拉小黑镜唇釉镜面漆光唇釉唇蜜口红持久不掉色</h1><br>
+            <h2>R703</h2><br>
+            <h3>天猫无忧购</h3><br>
+            <h4>￥69</h4>
+            <img src="imgs/{E5D0F771-108E-41A5-8BCB-E7E0C9BCAD33}_20200802150319.jpg" style="width: 80px;height: 35px;position: absolute;top:80px ;left: 600px">
+        </div>
+    </div>
+</div>
+<div style="width: 1000px;height: 2000px"></div>
+<div id="sy">
+   <a href="淘宝页面.html"> <div class="sy1">首页
+        <img src="imgs/{6DC6B4A4-396C-4860-BA1C-644616FFCA6C}_20200802132724.jpg">
+    </div></a>
+    <div class="gwc">购物车
+        <img src="imgs/{F1087029-FC95-409B-9EE2-79368DB36B38}_20200802160120.jpg">
+    </div>
+    <div class="ddlb">
+        <a href="订单列表页面.html">订单列表</a>
+        <img src="imgs/{8979E430-658B-4325-8A6F-1E795D9DC4AC}_20200802160212.jpg">
+    </div>
+    <div class="wdtb">我的淘宝
+        <img src="imgs/{393E2716-EE7E-4CCE-9E34-5ED126D27B2B}_20200801182316.jpg">
+    </div>
+    <div class="gd">更多
+        <img src="imgs/{A8CC5E7F-A6A7-4CBA-A29C-8031DF04AA94}_20200802133045.jpg">
+    </div>
+</div>
+</body>
+</html>
